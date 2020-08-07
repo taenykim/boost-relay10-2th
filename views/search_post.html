@@ -1,25 +1,23 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>게시글 검색</title>
+    <link rel="stylesheet" type="text/css" href="/css/search_post.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="utf-8">
-  <title>게시글 검색</title>
-  
-  
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" type="text/css" href="/css/search_post.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-		crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-    <nav class="navbar navbar-default", style="font-family: 'GmarketSansBold';">
+  <body>
+    <nav class="navbar navbar-default" , style="font-family: 'GmarketSansBold';">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></button>
@@ -38,11 +36,11 @@
         </div>
       </div>
     </nav>
-    
+
     <div class="main">
       <div class="form-group has-search">
         <input type="text" class="form-control" placeholder="사연을 검색해주세요." />
-        <input type="submit" value="검색"/>
+        <input type="submit" value="검색" />
       </div>
     </div>
     <div class="container">
@@ -55,6 +53,6 @@
         <div id="contents2"></div>
       </div>
     </div>
-    <script src="js/search_post.js"></script>
+    <script src="/js/search_post.js"></script>
   </body>
 </html>

@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/css/create_post.css">
-    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="/css/create_post.css" />
+    <link rel="stylesheet" href="/css/common.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
 
     <title>게시글 작성</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- navbar -->
-    <nav class="navbar navbar-default", style="font-family: 'GmarketSansBold';">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                </button>
-                <a class="navbar-brand" href="/">Home</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="/posts/write">게시글 작성</a></li>
-                    <li><a href="/posts">게시글 검색</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/">회원가입</a></li>
-                    <li><a href="/login">로그인</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-default" , style="font-family: 'GmarketSansBold';">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"></button>
+          <a class="navbar-brand" href="/">Home</a>
         </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/posts/write">게시글 작성</a></li>
+            <li><a href="/posts">게시글 검색</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">회원가입</a></li>
+            <li><a href="/login">로그인</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <form class="post">
-        <div class="parent">
-            <div class="side">
-                <div class="container">
-                    <h3>Who</h3>
-                    <div>
-                        <label class="gender-label">성별</label>
-                        <input type="radio" name="gender" value="남자" id="male">
-                        <label for="male" class="gender"> 남자</label>
-                        <input type="radio" name="gender" value="여자" id="female">
-                        <label for="female" class="gender">여자</label>
-                    </div>
-                    <div>
-                        <label for="age">나이</label>
-                        <input id="age" reqired /><span>세</span>
-                    </div>
-                    <label for="info">어떤 사람인가요?</label>
-                    <textarea id="info" cols="2"></textarea>
-                </div>
-
-                <div class="container">
-                    <h3>when</h3>
-                    <div>
-                        <input type="date" id="start_date"><span>~</span>
-                        <input type="date" id="end_date">
-                    </div>
-                </div>
-
-                <div class="container">
-                    <h3>where</h3>
-                    <div>
-                        <label for="place">장소</label>
-                        <input id="place" reqired />
-                    </div>
-                    <div>
-                        <label for="group_name">그룹</label>
-                        <input id="group_name">
-                        <reqired />
-                    </div>
-                </div>
+    <div class="post">
+      <div class="parent">
+        <div class="side">
+          <div class="container">
+            <h3>Who</h3>
+            <div>
+              <label class="gender-label">성별</label>
+              <input type="radio" name="gender" value="남자" id="male" />
+              <label for="male" class="gender"> 남자</label>
+              <input type="radio" name="gender" value="여자" id="female" />
+              <label for="female" class="gender">여자</label>
             </div>
-
-            <div class="container story_container">
-                <h3>사연</h3>
-                <textarea id="stroy" cols="50"></textarea>
-                <div class="btn-div">
-                    <input type="submit" class="form-btn" value="등록" />
-                </div>
+            <div>
+              <label for="age">나이</label>
+              <input id="age" reqired name="age" /><span>세</span>
             </div>
+            <label for="info">어떤 사람인가요?</label>
+            <textarea id="info" cols="2" name="info"></textarea>
+          </div>
+
+          <div class="container">
+            <h3>when</h3>
+            <div>
+              <input type="date" id="start_date" name="start_date" /><span>~</span>
+              <input type="date" id="end_date" name="end_date" />
+            </div>
+          </div>
+
+          <div class="container">
+            <h3>where</h3>
+            <div>
+              <label for="place">장소</label>
+              <input id="place" reqired name="place" />
+            </div>
+            <div>
+              <label for="group_name">그룹</label>
+              <input id="group_name" name="group_name" />
+              <reqired />
+            </div>
+          </div>
         </div>
 
-    </form>
-</body>
-
+        <div class="container story_container">
+          <h3>사연</h3>
+          <textarea id="story" cols="50" name="story"></textarea>
+          <div class="btn-div">
+            <input type="button" id="form-btn" class="form-btn" value="등록" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/create_post.js"></script>
+  </body>
 </html>
