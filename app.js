@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const sqlite3 = require('sqlite3').verbose();
+// const sqlite3 = require('sqlite3').verbose();
 
 const apiRouter = require('./routes/index');
 
@@ -14,21 +14,21 @@ app.use(express.static('public'));
 app.use('/api', apiRouter)
 
 
-// open database in memory
-let db = new sqlite3.Database('./db/test.db', sqlite3.OPEN_READWRITE, (err) => {
-  if (err) {
-    return console.error(err.message);
-  }
-  console.log('Connected to the in-memory SQlite database.');
-});
+// // open database in memory
+// let db = new sqlite3.Database('./db/test.db', sqlite3.OPEN_READWRITE, (err) => {
+//   if (err) {
+//     return console.error(err.message);
+//   }
+//   console.log('Connected to the in-memory SQlite database.');
+// });
 
 
-db.close((err) => {
-  if (err) {
-    return console.error(err.message);
-  }
-  console.log('Close the database connection.');
-});
+// db.close((err) => {
+//   if (err) {
+//     return console.error(err.message);
+//   }
+//   console.log('Close the database connection.');
+// });
 
 app.get('/', (req, res) => {
   res.send("main");
