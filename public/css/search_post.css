@@ -6,10 +6,6 @@
   margin: 10px auto;
 }
 
-body {
-  background-color: #ffc185;
-}
-
 h2 {
   font-family: 'GmarketSansBold';
   text-align: center;
@@ -28,6 +24,7 @@ article {
   width: 300px;
   height: 30px;
   font-size: 20px;
+  display:inline-block;
 }
 
 .container {
@@ -58,7 +55,7 @@ article {
   align-self: flex-end;
   width: 100px;
   height: 10px;
-  background-color: rgb(59, 192, 116);
+  background-color: #A3BAD6;
   border-radius: 10px;
   color: white;
   text-align: center;
@@ -85,7 +82,7 @@ article {
   margin-top: 20px;
   font-size: 20px;
   margin-left: 10px;
-  color: orange;
+  color: #8C8A87;
 }
 
 .article-button {
@@ -95,7 +92,7 @@ article {
   align-self: flex-end;
   width: 200px;
   height: 20px;
-  background-color: rgb(13, 82, 43);
+  background-color: #42648f;
   border-radius: 10px;
   color: white;
   text-align: center;

@@ -5,9 +5,7 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background: #ffc185;
-}
+
 .container {
   font-family:'GmarketSansBold';
   width: auto;
@@ -35,7 +33,7 @@ label,
 span {
   font-family:'GmarketSansBold';
   text-transform: uppercase;
-  color: #87613d;
+  color: #696969;
 }
 
 /*p > span {
@@ -48,7 +46,6 @@ h3 {
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
-  color: #87613d;
   margin-bottom: 30px;
 }
 .gender {
@@ -69,7 +66,6 @@ button {
   border: none;
   padding: 5px;
   border-radius: 5px;
-  background-color: #ff7d00;
   color: #fff;
 }
 .btn-div {
@@ -78,9 +74,9 @@ button {
 input,
 textarea {
   border: none;
-  border-bottom: 1px solid #ffc185;
+  border-bottom: 1px solid #D1D1D1;
   font-family:'GmarketSansBold';
-  color: #ff7d00;
+  color: #696969;
   font-size: 18px;
   font-weight: 100;
   margin-bottom: 25px;
@@ -93,7 +89,7 @@ textarea {
 textarea {
   font-family:'GmarketSansLight' !important;
   padding-top: 10px;
-  border-top: 1px solid #ffc185;
+  border-top: 1px solid #D1D1D1;
   font-size: 18px !important;
   height: 80%;
   width: 100%;
