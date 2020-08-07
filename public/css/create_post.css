@@ -1,109 +1,100 @@
-@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import "https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400";
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 body {
-	background: #ffc185;
+  background: #ffc185;
 }
-
-.container{
-	width: auto;
-	height:auto;
-	background: #fff;
-	border-radius: 5px;
-	padding: 30px;
-	margin: 10px;
-	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
-	box-sizing: border-box;
+.container {
+  font-family:'GmarketSansBold';
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
-
-.parent{
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
+.parent {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
 }
-
-
-.side{
-	flex:0.5;
+.side {
+  flex: 0.5;
 }
-
-.story_container{
-	flex:1;
+.story_container {
+  font-family:'GmarketSansBold';
+  flex: 1;
 }
-
-label,span {
-	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
-	color: #87613d;
+label,
+span {
+  font-family:'GmarketSansBold';
+  text-transform: uppercase;
+  color: #87613d;
 }
 
 /*p > span {
-	padding-top: 3px;
-	display: block;
-	font-weight: 400;
-	font-size: 9px;
+    padding-top: 3px;
+    display: block;
+    font-weight: 400;
+    font-size: 9px;
 }*/
-
 h3 {
-	text-align: center;
-	font-family: 'Dosis';
-	font-size: 35px;
-	text-transform: uppercase;
-	color: #87613d;
-	margin-bottom: 30px;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #87613d;
+  margin-bottom: 30px;
 }
-
 .gender {
-	padding-left: 25px;
-	cursor: pointer;
-	font-size: 14px;
-	margin-right: 20px;
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 20px;
 }
-
 .gender-label {
-	display: block;
+  display: block;
 }
-
 input,
 textarea,
-button{
-	outline: none !important; 
+button {
+  outline: none !important;
 }
-
-.form-btn{
-	border: none;
-	padding: 5px;;
-	border-radius:5px;
-	background-color: #ff7d00;
-	color: #fff;
+.form-btn {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ff7d00;
+  color: #fff;
 }
-
-.btn-div{
-	text-align: center;
+.btn-div {
+  text-align: center;
 }
-
-input,textarea {
-	border: none;
-	border-bottom: 1px solid #ffc185;
-	font-family: 'Roboto';
-	color: #ff7d00;
-	font-size: 21px;
-	font-weight:100;
-	margin-bottom:25px;
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #ffc185;
+  font-family:'GmarketSansBold';
+  color: #ff7d00;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 25px;
 }
-
-#age{
-	display: inline-block;
-	width: 30%;
-	text-align: center;
+#age {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
 }
-
-
-textarea{
-	border-top: 1px solid #ffc185;
-	height: 80%;
-	width: 100%;
+textarea {
+  font-family:'GmarketSansLight' !important;
+  padding-top: 10px;
+  border-top: 1px solid #ffc185;
+  font-size: 18px !important;
+  height: 80%;
+  width: 100%;
 }
