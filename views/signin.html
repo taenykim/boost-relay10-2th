@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- bootstrap & jQuery-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+
+	<!-- signin css -->
+	<link rel="stylesheet" type="text/css" href="/css/signin.css" />
+
+	<title>로그인</title>
+</head>
+
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+				</button>
+				<a class="navbar-brand" href="/">Home</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="/posts/write">게시글 작성</a></li>
+					<li><a href="/posts">게시글 검색</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="/">회원가입</a></li>
+					<li><a href="/login">로그인</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- login form -->
+	<div class="login">
+		<form class="login-container">
+			<p><input type="ID" placeholder="아이디"></p>
+			<p><input type="password" placeholder="비밀번호"></p>
+			<p><input type="submit" value="로그인"></p>
+		</form>
+	</div>
+
+</body>
+
+</html>
