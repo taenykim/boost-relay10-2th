@@ -48,8 +48,15 @@ body {
 }
 
 .login-container {
-  background: #ebebeb;
-  padding: 12px;
+  font-family:'GmarketSansBold';
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
 
 .login input {
