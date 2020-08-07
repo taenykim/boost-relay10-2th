@@ -1,0 +1,8 @@
+create table User (
+  id varchar(50) NOT NULL,
+  pw char(60) DEFAULT NULL,
+  name varchar(50) DEFAULT NULL,
+  gender varchar(10) DEFAULT NULL,
+  age int(11) DEFAULT NULL,
+  PRIMARY KEY (id)
+);
