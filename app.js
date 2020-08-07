@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const sqlite3 = require('sqlite3').verbose();
 
-const apiRouter = require('./routes/api');
+const apiRouter = require('./routes/index');
 
 const port = 80;
 
@@ -15,7 +15,7 @@ app.use('/api', apiRouter)
 
 
 // open database in memory
-let db = new sqlite3.Database('./db/test.db', (err) => {
+let db = new sqlite3.Database('./db/test.db', sqlite3.OPEN_READWRITE, (err) => {
   if (err) {
     return console.error(err.message);
   }
