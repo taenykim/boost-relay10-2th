@@ -1,4 +1,3 @@
-// const sqlite3 = require('sqlite3').verbose();
 const pool = require('../lib/database');
 
 // TODO :: sqlite3로 쿼리 날리기
